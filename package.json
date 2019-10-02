@@ -1,0 +1,19 @@
+{
+  "name": "preferencemanager",
+  "version": "1.0.0",
+  "description": "Preference Manager - Test Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkeemBaker17/PreferenceManager.git"
+  },
+  "author": "Akeem Baker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkeemBaker17/PreferenceManager/issues"
+  },
+  "homepage": "https://github.com/AkeemBaker17/PreferenceManager#readme"
+}
