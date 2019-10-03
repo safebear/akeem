@@ -1,9 +1,13 @@
 import { After, Before, Status } from "cucumber";
 import { browser } from "protractor";
+
 //Runs before every Scenario
 //The Delay of 100s ensures that the Website is open before each Scenario is ran
 Before({ timeout: 100 * 1000 }, async function()
 {
+    //Needed as Pref Manager isn't written in Angular
+    browser.waitForAngularEnabled(false);
+    
     //Opens the Website to the Base URL in the 'protractor.config.ts file'
     await browser.get("");
 })
