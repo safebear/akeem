@@ -1,6 +1,6 @@
-import { browser } from "protractor";
+import { browser } from "./node_modules/protractor";
 import { After, Before, Status } from "cucumber";
-import { async } from "q";
+import { async } from "./node_modules/q";
 
 //Runs before every Scenario
 //The Delay of 100s ensures that the Website is open before each Scenario is ran

@@ -15,7 +15,7 @@ export const config: Config =
     specs:
     [
         //".." Takes us back to the previous directory
-        "../e2e/Features/*.feature"
+        "../e2e/features/*.feature"
     ],
 
     //Maximising the Window at the start of our Tests
@@ -32,7 +32,7 @@ export const config: Config =
         format: "json:.tmp/results.json",
         profile: false,
         //Locations of the Step Definitions and Hooks
-        require: ["./StepDefinitions/*.steps.js","./Support/hooks.js"],
+        require: ["./step-definitions/*.steps.js","./support/hooks.js"],
         //Tags Stating which Scenarios we will Run
         tags: false,
         "no-source": true,
