@@ -1,7 +1,5 @@
-import { browser } from "./node_modules/protractor";
 import { After, Before, Status } from "cucumber";
-import { async } from "./node_modules/q";
-
+import { browser } from "protractor";
 //Runs before every Scenario
 //The Delay of 100s ensures that the Website is open before each Scenario is ran
 Before({ timeout: 100 * 1000 }, async function()
@@ -19,8 +17,6 @@ After({ timeout: 100 * 1000 }, async function(scenario)
         const screenshot = await browser.takeScreenshot();
         this.attach(screenshot, "image/png");
     }
-
-    return this.driver.quit();
 });
 
 
