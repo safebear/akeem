@@ -34,7 +34,7 @@ export const config: Config =
         //Locations of the Step Definitions and Hooks
         require: ["./step-definitions/*.steps.js","./support/hooks.js"],
         //Tags Stating which Scenarios we will Run
-        tags: "@runThis",
+        //tags: "@runThis",
         "no-source": true,
     },
 
