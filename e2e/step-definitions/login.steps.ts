@@ -36,7 +36,7 @@ When("A valid Username and Password is entered then the Login button is clicked"
     //this.actions.sendKeys(loginPage.txtUsername, this.usernameWorld)
     //this.actions.sendKeys(loginPage.txtPassword, this.passwordWorld)
 
-    return this.actions.click(loginPage.btnLogin);
+    //return this.actions.click(loginPage.btnLogin);
   });
 
 Then("The User is Logged in and the Landing Page appears", function () {

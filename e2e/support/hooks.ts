@@ -7,7 +7,6 @@ import {Actions} from "./actions";
 //The Delay of 100s ensures that the Website is open before each Scenario is ran
 Before({ timeout: 100 * 1000 }, async function()
 {
-
     this.actions = new Actions();
 
     //Needed as Pref Manager isn't written in Angular

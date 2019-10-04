@@ -3,7 +3,7 @@ Feature: Login
         Rules:
         1. Users must be able to enter their Username and Password then Login to Prefrence Manager using the Login button
 
-Background: User is valid
+Background: Given that the User has a registered account on Preference Manager
     Given The Username 'ABAKER' and Password 'Samsung123!' are valid
 
     Scenario: The User is Logged in and the Landing Page appears
