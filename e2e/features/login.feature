@@ -1,17 +1,10 @@
 Feature: Login
+Scenario Outline: Login to Preference manager using the correct Username and Password
+Given The Login page is displayed
+And The User enters a correct Username '<Username>' and Password '<Password>'
+And The User clicks the Login button
+Then The Landing Page is displayed and the Username '<Username>' is shown
 
-        Rules:
-        1. Users must be able to enter their Username and Password then Login to Prefrence Manager using the Login button
-
-Background: Given that the User has a registered account on Preference Manager
-    Given The Username 'ABAKER' and Password 'Samsung123!' are valid
-
-    Scenario: The User is Logged in and the Landing Page appears
-        When A valid Username and Password is entered then the Login button is clicked
-        Then The User is Logged in and the Landing Page appears
-
-    Scenario Outline: The user logs in multiple times
-        When a user logs in with password '<password>' and username '<username>'
-        Examples:
-            | username | password   |
-            | ABAKER   | Samsung123!|
+Examples:
+| Username | Password |
+| ABAKER | Samsung123! |
