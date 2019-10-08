@@ -8,11 +8,13 @@ declare module "cucumber"
     interface World
     {
         //Where we stored our Test Data - Username and Password from the global.d.ts
+        //SIMON: So we don't also need 'usernameWorld' and 'passwordWorld' below
         loginDetails: myLibrary.LoginDetails;
 
         actions: Actions;
 
-        usernameWorld: string;
-        passwordWorld: string;
+        // SIMON: You don't need these - you're storing 'loginDetails' in the variable above!
+        // usernameWorld: string;
+        // passwordWorld: string;
     }
 }

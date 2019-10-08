@@ -13,6 +13,7 @@ export class LandingPage
     public verifyUserLoggedIn = (loginDetails: myLibrary.LoginDetails) =>
     {
         //#Label1 = The Username displayed on the Landing Page
+        //SIMON: loginDetails.username = this is the 'username' part of 'loginDetails' (see 'global.d.ts' and you can see that LoginDetails should contain a 'username' and a 'password')
         return element(by.cssContainingText("#Label1",loginDetails.username));
     }
 }
